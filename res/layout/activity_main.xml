@@ -1,0 +1,433 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.test.MainActivity" >
+	
+	<ImageView
+        android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bird_bg" />
+
+   <LinearLayout
+       android:id="@+id/slantLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:src="@drawable/slant_bg" />
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6" >
+				
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                	android:layout_height="match_parent"
+                	android:gravity="center"
+                	android:layout_weight="1">
+	                
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/myTasksTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Tasks"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/myTaskDateTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A5A8AC"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:text="FEBRUARY 8, 2015" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6" >
+				
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                	android:layout_height="match_parent"
+                	android:gravity="center"
+                	android:layout_weight="1">
+	                <View
+	                    android:id="@+id/view1"
+	                    android:layout_width="10dp"
+	                    android:layout_height="10dp"
+	                   	android:background="@drawable/green_circle" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/egTxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My new Icons"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:id="@+id/egtimeTxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3pm"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="#A5A8AC"
+	                android:textSize="12sp"
+	                android:fontFamily="sans-serif-light"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/egsubTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A5A8AC"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Web App" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutToHide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6" >
+				
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                	android:layout_height="match_parent"
+                	android:gravity="center"
+                	android:layout_weight="1">
+	                <View
+	                    android:layout_width="10dp"
+	                    android:layout_height="10dp"
+	                   	android:background="@drawable/green_yellow" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My new Icons"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3pm"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="#A5A8AC"
+	                android:textSize="12sp"
+	                android:fontFamily="sans-serif-light"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A5A8AC"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Web App" />
+
+        </LinearLayout>
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6" >
+				
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                	android:layout_height="match_parent"
+                	android:gravity="center"
+                	android:layout_weight="1">
+	                <View
+	                    android:layout_width="10dp"
+	                    android:layout_height="10dp"
+	                   	android:background="@drawable/green_circle" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My new Icons"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3pm"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="#A5A8AC"
+	                android:textSize="12sp"
+	                android:fontFamily="sans-serif-light"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A5A8AC"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Web App" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6" >
+				
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                	android:layout_height="match_parent"
+                	android:gravity="center"
+                	android:layout_weight="1">
+	                <View
+	                    android:layout_width="10dp"
+	                    android:layout_height="10dp"
+	                   	android:background="@drawable/btn_materail_press_normal" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My new Icons"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3pm"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textColor="#A5A8AC"
+	                android:textSize="12sp"
+	                android:fontFamily="sans-serif-light"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A5A8AC"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Web App" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/profile_pic" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#fff"
+        android:text="Emily Rose" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:text="Product Designer" />
+
+    <Button
+        android:id="@+id/buttonClick"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:visibility="visible"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/btn_material" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/drawer_icon" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:text="Timeline" />
+
+    <RelativeLayout
+        android:id="@+id/btn_pressed"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="-25dp"
+        android:visibility="gone"
+        android:background="@drawable/btn_materail_press" >
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/green_circle"
+            android:layout_marginTop="10dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view2"
+            android:background="@drawable/green_circle"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="12dp" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/view3"
+            android:layout_above="@+id/view5"
+            android:background="@drawable/green_circle"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="3dp" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_circle" />
+
+        <Button
+            android:id="@+id/button_pressed"
+            android:layout_width="60dp"
+        	android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_materail_press_normal" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
